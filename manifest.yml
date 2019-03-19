@@ -1,0 +1,12 @@
+---
+applications:
+- name: hello-dccs
+  host: training-hello-dccs
+  buildpack: nodejs_buildpack
+  memory: 64M
+  disk_quota: 64M
+  command: node index.js
+services:
+- iothub-training
+env:
+  OPTIMIZE_MEMORY: true
